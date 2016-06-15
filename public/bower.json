@@ -1,0 +1,21 @@
+{
+  "name": "librerias",
+  "homepage": "https://github.com/rlaricor/webservice_pide",
+  "description": "librerias frontend webservice",
+  "main": "",
+  "authors": [
+    "Raul Larico Ramos"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3"
+  }
+}
