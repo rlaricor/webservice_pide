@@ -147,7 +147,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        'Artisaninweb\SoapWrapper\ServiceProvider',
 
         /*
          * Application Service Providers...
@@ -156,6 +155,8 @@ return [
         Webservice\Providers\AuthServiceProvider::class,
         Webservice\Providers\EventServiceProvider::class,
         Webservice\Providers\RouteServiceProvider::class,
+        'Artisaninweb\SoapWrapper\ServiceProvider',
+        Collective\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -203,6 +204,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'SoapWrapper' => 'Artisaninweb\SoapWrapper\Facades\SoapWrapper',
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 

@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/ruc',[
     'as' => 'ruc', 'uses' => 'SoapController@ruc'
 ]);
+
+Route::get('/form', function () {
+    return view('formulario');
+});
