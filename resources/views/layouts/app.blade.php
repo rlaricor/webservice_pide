@@ -38,7 +38,6 @@
 
 </div>
 
-
 {{ Html::style('bower_components/jquery/dist/jquery.min.js') }}
 {{ Html::style('bower_components/bootstrap/dist/js/bootstrap.min.js') }}
 

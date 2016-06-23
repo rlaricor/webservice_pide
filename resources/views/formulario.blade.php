@@ -2,9 +2,19 @@
 @section('content')
 
 <div class="jumbotron">
-    <h1>Jumbotron heading</h1>
-    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-    <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+   <div class="col-md-10">
+       {!! Form::open(array('url' => 'foo/bar','class'=>'form-inline')) !!}
+
+       <div class="form-group">
+           {{Form::label('email', 'E-Mail Address')}}
+           {{ Form::select('list', array(
+            'Fruits' => array('Orange', 'Apple'),
+            'Food' => array('Chicken', 'Beef'),
+            ),null,['class'=>'form-control'])}}
+           {{Form::submit('Consultar')}}
+        </div>
+       {!! Form::close() !!}
+   </div>
 </div>
 
 <div class="row marketing">
