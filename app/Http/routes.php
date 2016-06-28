@@ -22,3 +22,9 @@ Route::get('/ruc',[
 Route::get('/webservice', function () {
     return view('formulario');
 });
+
+Route::post('/webservice',['uses'=>'SoapController@webservice'] );
+
+Route::get('/dni',[
+  'as' => 'dni', 'uses' => 'SoapController@dni'
+]);
